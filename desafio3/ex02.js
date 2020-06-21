@@ -14,9 +14,9 @@ const usuarios = [
   }
 
   for(let i = 0; i < usuarios.length; i++) {
-    const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuario[i]);
+    const usuarioTrabalhaComCSS = checaSeUsuarioUsaCSS(usuarios[i]);
 
     if (usuarioTrabalhaComCSS) {
-      console.log(`O usuário ${usuario[i].nome} trabalha com CSS`);
+      console.log(`O usuário ${usuarios[i].nome} trabalha com CSS`);
     }
   }

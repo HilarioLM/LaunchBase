@@ -4,13 +4,9 @@ const usuarios = [
     { nome: "Tuane", tecnologias: ["HTML", "Node.js"] }
   ];
 
-function verify (usuario) {
 
-for(let i = 0; i < usuario.length; i++){
+  for(let i = 0; i < usuarios.length; i++){
+    //join() funciona como um separador de string
+    console.log(`${usuarios[i].nome} trabalha com ${usuarios[i].tecnologias.join(', ')}`);
+  }
 
-    console.log(`${usuario[i].nome} trabalha com ${usuario[0].tecnologias} ,${usuario[1].tecnologias} `);
-}
-
-}
-
-verify(usuarios);
