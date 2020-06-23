@@ -37,22 +37,31 @@ const user = {
   }
   
 
-  createTransaction(user.transactions[0])
-  const transaction = user.transactions[0].type === 'credit'
-    if (transaction) {
-        user.balance += user.transactions[0].value
-    } else {
-        user.balance -= user.transactions[0].value
-    }
-
-//   function getHigherTransactionByType() {
-   
-
+//   createTransaction(user.transactions[0])
+//   for(let a = 0; a < user.transactions.length; a++){
+//   const transaction = (user.transactions[a].type === 'credit' || user.transactions[a].type === 'debit' )
+//     if (transaction) {
+//         user.balance += user.transactions[a].value
+//     } else {
+//         user.balance -= user.transactions[a].value
+//     }
 //   }
 
-//   getHigherTransactionByType()
+  function getHigherTransactionByType(credito, debito) {
+    const maiorValor = getHigherTransactionByType(credito)
+    const menorValor = getHigherTransactionByType(debito)
+    
+    return maiorValor, menorValor
+  }
+
+  getHigherTransactionByType(user.transactions[0])
+  for(let j = 0; j < user.transactions.length; j++) {
+    if(maiorValor === 'credit') {
+        console.log(user.transactions[j].value)
+    }
+}
   
-  console.log(user)
+//   console.log(credito)
 
 
 
